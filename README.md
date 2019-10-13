@@ -1,11 +1,13 @@
-# my-saber-blog
+# MOSS Website
 
-## Scripts
+## Building/developing
 
-### `npm run dev`
+Install [Node.js](https://nodejs.org/en/) (and optionally [Yarn](https://yarnpkg.com/lang/en/)).
 
-Run dev server at `http://localhost:3000`
+### `npm run dev`, `yarn dev`
 
-### `npm run build`
+Runs a development server at `http://localhost:3000` which rebuilds whenever you edit a page.
 
-Build your website to `public` folder which you can deploy to GitHub Pages, Netlify or wherever you want.
+### `npm run build`, `yarn build`
+
+Builds the website to `public/` for deployment.
