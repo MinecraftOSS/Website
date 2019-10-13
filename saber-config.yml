@@ -1,0 +1,74 @@
+theme: ./theme
+
+siteConfig:
+  title: MOSS
+  author: md678685
+  url: https://minecraftoss.netlify.com
+
+themeConfig:
+  showcase:
+  - name: EssentialsX
+    authors:
+    - name: EssentialsX Team
+      url: https://github.com/EssentialsX
+    slug: /projects/essx.html
+    tagline: Essential plugins for essential essentials.
+  - name: FactionsUUID
+    authors:
+    - name: drtshock
+      url: https://github.com/drtshock
+    - name: FactionsUUID maintainers
+      url: https://github.com/drtshock/Factions/graphs/contributors
+    slug: /projects/fuuid.html
+    tagline: Premium Factions for premium people.
+  - name: PlayerVaultsX
+    authors:
+    - name: drtshock
+      url: https://github.com/drtshock
+    slug: /projects/pvx.html
+    tagline: Player vaults for player players.
+  - name: LWC Extended
+    authors:
+    - name: pop4959
+      url: https://github.com/pop4959
+    slug: /projects/lwc.html
+    tagline: The original block locking plugin.
+  - name: eZProtector
+    authors:
+    - name: DoNotSpamPls
+      url: https://github.com/DoNotSpamPls
+    slug: /projects/ezp.html
+    tagline: Securing your server the easy way!
+  - name: Guilds
+    authors:
+    - name: Glare
+      url: https://github.com/darbyjack
+    slug: /projects/guilds.html
+    tagline: Adding RPG to your server has never been more fun!
+  - name: NuVotifier
+    authors:
+    - name: Ichbinjoe
+      url: https://github.com/Ichbinjoe
+    slug: /projects/nuvotifier.html
+    tagline: A modern Votifier replacement.
+  - name: ObsidianDestroyer
+    authors:
+    - name: drtshock
+      url: https://github.com/drtshock
+    slug: /projects/obdestroyer.html
+    tagline: Destroyer of Obsidian.
+  - name: Potato
+    authors:
+    - name: drtshock
+      url: https://github.com/drtshock
+    slug: /projects/potato.html
+    tagline: If you fork this, you can say you've forked a potato.
+
+
+plugins:
+  - resolve: saber-plugin-query-posts
+  - resolve: saber-plugin-feed
+    options:
+      atomFeed: true
+  - resolve: saber-plugin-netlify-redirect
+  - resolve: ./plugins/project-showcase
