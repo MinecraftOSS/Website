@@ -8,47 +8,18 @@
                 Website by <a href="https://github.com/md678685"><b>md678685</b></a>. Inspired by <a href="https://papermc.io">PaperMC</a> and based on the <a href="https://essentialsx.cf">EssentialsX website</a>.
                 Built with <a href="https://saber.land">Saber</a>, <a href="https://bulma.io">Bulma</a>, <a href="https://vuejs.org">Vue</a> and <a href="https://buefy.org/">Buefy</a>.
             </p>
+            <p class="hide-until-code">
+                <b>ʇıʞʞnq ɐ sɐɥ ı</b>
+            </p>
         </div>
     </footer>
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
-    props: ["page"],
-    computed: {
-        commitHash() {
-            return this.$siteConfig.commitHash;
-        },
-        commitLink() {
-            return "https://github.com/md678685/EssentialsX-Website/commit/" + this.commitHash;
-        },
-        downloads() {
-            return this.external.downloads ? (this.external.downloads / 1000000).toFixed(2) + "m" : "1.5m";
-        },
-        downloadsHover() {
-            return this.external.downloads ? this.external.downloads.toLocaleString("en") : "Over 1.5 million";
-        },
-        stars() {
-            return this.external.github.stars || "400+";
-        },
-        buildNo() {
-            return this.external.jenkins.build || "???";
-        },
-        members() {
-            return this.external.discord.members ? (this.external.discord.members / 1000).toFixed(1) + "k" : "1k";
-        },
-        membersHover() {
-            return this.external.discord.members || "Over 1000";
-        }
-    }
+    props: ["page"]
 }
-
-
-
 </script>
-
 
 <style>
 .hide-until-code {
