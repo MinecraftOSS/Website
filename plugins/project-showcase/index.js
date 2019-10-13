@@ -4,7 +4,7 @@ module.exports = {
     name: ID,
     apply: (api, options = {}) => {
         api.hooks.onCreatePages.tap(ID, (...params) => {
-            const projects = [];
+            let projects = [];
             const toInject = [];
 
             for (const page of api.pages.values()) {
@@ -22,6 +22,8 @@ module.exports = {
 
                 projects.push(project);
             }
+
+            projects = projects.sort((a, b) => a.name.localeCompare(b.name));
 
             for (const page of toInject) {
                 page.showcase = projects;

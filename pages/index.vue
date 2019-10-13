@@ -13,6 +13,7 @@
             <h2 class="title is-2 has-text-centered">Our projects</h2>
             <ClientOnly>
                 <carousel
+                    class="container"
                     :autoplay="true"
                     :loop="true"
                     :per-page-custom="[[0, 1], [769, 2], [1024, 3], [1408, 4]]"
