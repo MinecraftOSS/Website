@@ -1,5 +1,5 @@
 ---
-title: PermissionEx
+title: PermissionsEx
 layout: project
 
 project:
