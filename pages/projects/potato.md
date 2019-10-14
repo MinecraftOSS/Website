@@ -13,7 +13,7 @@ project:
 
 <b-collapse :open="false">
   <a slot="trigger">
-    <p class="has-text-centered"><img src="http://i.imgur.com/dRnvRZZ.jpg"></p>
+    <p class="has-text-centered spinny-potato"><img src="http://i.imgur.com/dRnvRZZ.jpg"></p>
   </a>
   <p class="content">
 Forking potatoes is an ancient and well-mannered tradition.
@@ -43,3 +43,15 @@ If you have forked the potato and are looking to submit a pull request, please a
 - To stress: **no non-potato-related items**.
 </p>
 </b-collapse>
+
+<style lang="scss" scoped>
+@keyframes spin {
+  from { transform: perspective(10cm) rotateX(0) }
+  to   { transform: perspective(10cm) rotateX(360deg) }
+}
+
+.konami .spinny-potato {
+  animation: spin 2.5s linear infinite;
+}
+
+</style>
