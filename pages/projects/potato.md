@@ -13,7 +13,7 @@ project:
 
 <b-collapse :open="false">
   <a slot="trigger">
-    <p class="has-text-centered spinny-potato"><img src="http://i.imgur.com/dRnvRZZ.jpg"></p>
+    <p class="has-text-centered spinny-potato"><img src="https://i.imgur.com/dRnvRZZ.jpg"></p>
   </a>
   <p class="content">
 Forking potatoes is an ancient and well-mannered tradition.
