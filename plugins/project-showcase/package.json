@@ -1,0 +1,9 @@
+{
+  "name": "saber-plugin-project-showcase",
+  "version": "0.0.1",
+  "description": "Injects a list of \"projects\" into pages derived from a \"project\" tag inside each page's meta",
+  "main": "index.js",
+  "repository": "https://github.com/MinecraftOSS/Website/",
+  "author": "md678685",
+  "license": "MIT"
+}
