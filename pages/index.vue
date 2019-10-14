@@ -18,7 +18,11 @@
                     :loop="true"
                     :per-page-custom="[[0, 1], [769, 2], [1024, 3], [1408, 4]]"
                     :scroll-per-page="false">
-                    <slide style="padding: 12px" v-for="project in page.showcase" :key="project.name">
+                    <slide
+                        style="padding: 12px"
+                        v-for="project in page.showcase"
+                        :key="project.name"
+                        :title="project.name">
                         <div class="box">
                             <h1 class="title">{{ project.name }}</h1>
                             <h3 class="subtitle">{{ project.tagline }}</h3>
