@@ -10,3 +10,5 @@ project:
   website: https://github.com/drtshock/PlayerVaults
 
 ---
+
+Resource page: https://www.spigotmc.org/resources/playervaultsx.51204/
