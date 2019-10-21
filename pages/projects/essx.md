@@ -4,10 +4,16 @@ layout: project
 
 project:
   authors:
+  - name: Essentials Team (formerly)
+    url: https://github.com/Essentials
   - name: EssentialsX Team
     url: https://github.com/EssentialsX
   tagline: Essential plugins for essential essentials.
   website: https://essentialsx.cf
+  source: https://github.com/EssentialsX/Essentials
+  downloads: https://essentialsx.cf/downloads.html
+  docs: https://essentialsx.cf/wiki/Home.html
+  patreon: https://patreon.com/essentialsx
 ---
 
 <p class="has-text-centered">

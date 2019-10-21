@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="hero is-small is-secondary">
+        <div class="hero is-small is-secondary is-bold">
             <div class="hero-head">
                 <Navbar hero/>
             </div>
@@ -13,6 +13,7 @@
                         <a class="has-text-white" :href="author.url">{{ author.name }}</a>
                     </span>
                 </h5>
+                <project-nav :project="page.project"></project-nav>
             </div>
         </div>
         <div class="section">
@@ -29,12 +30,14 @@
 <script>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
+import ProjectNav from "../components/ProjectNav.vue";
 
 export default {
     props: ['page'],
     components: {
         Navbar,
-        Footer
+        Footer,
+        ProjectNav
     },
     head() {
         return {
