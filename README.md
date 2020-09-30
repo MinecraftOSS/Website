@@ -1,4 +1,4 @@
-# MOSS Website
+# MOSS Web services
 
 ## Building/developing
 
